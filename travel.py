@@ -1,3 +1,10 @@
+import sys
+print(sys.executable)
+try:
+    import serpapi
+    print("SerpAPI is installed!")
+except ModuleNotFoundError:
+    print("SerpAPI is NOT installed!")
 import streamlit as st
 import json
 import os
@@ -302,5 +309,6 @@ if st.button("🚀 Generate Travel Plan"):
 
     st.subheader("🗺️ Your Personalized Itinerary")
     st.write(itinerary.content)
+
 
     st.success("✅ Travel plan generated successfully!")
