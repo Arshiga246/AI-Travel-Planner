@@ -5,4 +5,4 @@ requests==2.31.0
 serpapi==1.0.2
 openai==1.8.4
 python-dotenv==1.1.1
-google-search-results
+
